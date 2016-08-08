@@ -2,7 +2,7 @@
   "name": "ubtrac-core",
   "version": "1.0.0",
   "description": "task tracking with a emphasis on also tracking time spend on each task",
-  "main": "index.js",
+  "main": "src/utrac.js",
   "scripts": {
     "test": "mocha --recursive"
   },
