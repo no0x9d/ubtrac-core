@@ -53,7 +53,7 @@ module.exports.WorkItemRepository = class WorkItemRepository {
   findById(id) {
     return this.collection.findOneAsync({_id: id})
       .then(workitem => {
-        if (!workitem) return reject(new NoWorkItemFoundError());
+        if (!workitem) throw new NoWorkItemFoundError('could not find item with id ' + id);
         return workitem;
       })
   }
